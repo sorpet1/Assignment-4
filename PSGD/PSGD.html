@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Peter Sorenson Graphic Design HomePage</title>
+<meta charset="utf-8">
+<meta name="keywords" content="PSGD, Peter Sorenson Graphic Design, genius">
+<meta name="author" content="Peter Sorenson">
+<style>
+
+/* Color and Graphic Strategy
+1. I used colors that are present in my logo.
+2. rgb(242, 245, 82), rgb(122, 216, 188), rgb(125, 97, 156)
+3. These colors are placed in the header, nav and footer, respectively.  */
+
+/* Font Strategy
+1. Verdana, Geneva, Tahoma, sans-serif; fonts similar to that of my logo.
+2. Header: 30px;   */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(242, 245, 82);
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  border-style: solid;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: rgb(122, 216, 188);
+  padding: 20px;
+  border-style: solid;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(125, 97, 156);
+  padding: 50px;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Peter Sorenson Graphic Design</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <img src="websitelogo.svg" alt="PSGD logo" width="300" height="250">
+  </article>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>
